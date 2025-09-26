@@ -190,55 +190,53 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <pre>
-    <!-- More Works Dropdown -->
-    <div class="more-works-container">
-      <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-        <i class="fas fa-flask"></i>
-        More Works
-        <i class="fas fa-chevron-down dropdown-arrow"></i>
-      </button>
-      <div class="more-works-dropdown" id="moreWorksDropdown">
-        <div class="dropdown-header">
-          <h4>More Works from Our Lab</h4>
-          <button class="close-btn" onclick="toggleMoreWorks()">
-            <i class="fas fa-times"></i>
-          </button>
-        </div>
-        <div class="works-list">
-          <!-- TODO: Replace with your lab's related works -->
-          <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-            <div class="work-info">
-              <!-- TODO: Replace with actual paper title -->
-              <h5>Paper Title 1</h5>
-              <!-- TODO: Replace with brief description -->
-              <p>Brief description of the work and its main contribution.</p>
-              <!-- TODO: Replace with venue and year -->
-              <span class="work-venue">Conference/Journal 2024</span>
-            </div>
-            <i class="fas fa-external-link-alt"></i>
-          </a>
-          <!-- TODO: Add more related works or remove extra items -->
-          <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-            <div class="work-info">
-              <h5>Paper Title 2</h5>
-              <p>Brief description of the work and its main contribution.</p>
-              <span class="work-venue">Conference/Journal 2023</span>
-            </div>
-            <i class="fas fa-external-link-alt"></i>
-          </a>
-          <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-            <div class="work-info">
-              <h5>Paper Title 3</h5>
-              <p>Brief description of the work and its main contribution.</p>
-              <span class="work-venue">Conference/Journal 2023</span>
-            </div>
-            <i class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
+  <!-- More Works Dropdown -->
+  <div class="more-works-container">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
+      <i class="fas fa-flask"></i>
+      More Works
+      <i class="fas fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="more-works-dropdown" id="moreWorksDropdown">
+      <div class="dropdown-header">
+        <h4>More Works from Our Lab</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="works-list">
+        <!-- TODO: Replace with your lab's related works -->
+        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+          <div class="work-info">
+            <!-- TODO: Replace with actual paper title -->
+            <h5>Paper Title 1</h5>
+            <!-- TODO: Replace with brief description -->
+            <p>Brief description of the work and its main contribution.</p>
+            <!-- TODO: Replace with venue and year -->
+            <span class="work-venue">Conference/Journal 2024</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <!-- TODO: Add more related works or remove extra items -->
+        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 2</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 3</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
       </div>
     </div>
-  </pre>
+  </div>
 
   <main id="main-content">
   <section class="hero">
@@ -265,11 +263,11 @@
               <!-- TODO: Replace with your institution and conference/journal info -->
               <span class="author-block">
                 <sup>1 </sup>University of Chinese Academy of Science<br>
-                <sup>2 </sup>CASIA<br>
-                <sup>3 </sup>BAAI<br>
+                <sup>2 </sup>CASIA   <sup>3 </sup>BAAI<br>
                 <sup>4 </sup>Peking University<br>
+                <br>
+                <strong>Under Peer Review</strong>
               </span>
-              <large>Under Peer Review</large>
               <!-- TODO: Remove this line if no equal contribution -->
               <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution   <sup>†</sup>Corresponding Author</small></span>
             </div>
@@ -355,7 +353,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Navigating to a specified object in an unknown environment is a fundamental yet challenging capability of embodied intelligence. However, current methods struggle to balance decision frequency with intelligence, resulting in decisions lacking foresight or discontinuous actions. In this work, we propose PIGEON: Point of Interest Guided Exploration for Object Navigation with VLM, maintaining a lightweight and semantically aligned snapshot memory during exploration as semantic input for the exploration strategy. We use a large Visual-Language Model (VLM), named PIGEON-VL, to select Points of Interest (PoI) formed during exploration and then employ a lower-level planner for action output, increasing the decision frequency. Additionally, this PoI-based decision-making enables the generation of Reinforcement Learning with Verifiable Reward (RLVR) data suitable for simulators. Experiments on classic object navigation benchmarks demonstrate that our zero-shot transfer method achieves state-of-the-art performance, while RLVR further enhances the model's semantic guidance capabilities, enabling deep reasoning during real-time navigation. We deploy robots in real-world scenarios and compared them with other mainstream object navigation strategies, demonstrating the method's intelligence and generalization under high-frequency control in the physical world.
           </p>
         </div>
       </div>
@@ -408,80 +406,84 @@
 
 
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<pre>
+  <!-- Youtube video -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <!-- Paper video. -->
+        <h2 class="title is-3">Video Presentation</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            
+            <div class="publication-video">
+              <!-- TODO: Replace with your YouTube video ID -->
+              <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
+  </section>
+  <!-- End youtube video -->
+</pre>
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+<pre>
+  <!-- Video carousel -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3">Another Carousel</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <!-- TODO: Add poster image for better preview -->
+            <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
+              <!-- Your video file here -->
+              <source src="static/videos/carousel1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video2">
+            <!-- TODO: Add poster image for better preview -->
+            <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
+              <!-- Your video file here -->
+              <source src="static/videos/carousel2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-video3">
+            <!-- TODO: Add poster image for better preview -->
+            <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
+              <!-- Your video file here -->
+              <source src="static/videos/carousel3.mp4" type="video/mp4">
+            </video>
+          </div>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
       </div>
     </div>
   </section>
-<!--End paper poster -->
+  <!-- End video carousel -->
+</pre>
 
+
+
+
+
+<pre>
+  <!-- Paper poster -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title">Poster</h2>
+
+        <!-- TODO: Replace with your poster PDF -->
+        <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+            </iframe>
+          
+        </div>
+      </div>
+    </section>
+  <!--End paper poster -->
+</pre>
 
 
 <!--BibTex citation -->
